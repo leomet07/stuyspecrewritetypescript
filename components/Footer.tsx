@@ -311,6 +311,8 @@ const Footer = () => {
 						<Link
 							passHref
 							href="https://github.com/stuyspec/stuyspec-rewrite/issues"
+							target="_blank"
+							rel="noopener"
 						>
 							Found a bug? Report it here.
 						</Link>
