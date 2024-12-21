@@ -15,6 +15,7 @@ import generate_contributors_jsx from "../../components/GenerateContributorsJSX"
 import { generateMetaTags } from "../../utils/generateMetaTags";
 import BannerAdvertisements from "../../advertisements/BannerAdvertisements";
 import BannerAdvertisement from "../../advertisements/BannerAdvertisement";
+import { format } from "date-fns";
 
 interface Props {
 	article: ReceivedArticle;
@@ -36,8 +37,16 @@ function Article(props: Props) {
 		cover_image_source,
 		summary,
 		slug,
+		publicationDate,
 	} = props.article;
 
+	const formatPublicationDate = (date: string) => {
+		const parsedDate = new Date(publicationDate);
+		if (isNaN(parsedDate.getTime())){
+			return "Invalid";
+		}
+		return format(parsedDate, 'MMMM dd, yyyy');
+	}
 	const generateApproxReadingTime = () => {
 		let count = text.split(" ");
 		let readTime = Math.round(count.length / 250); // average reading time in min
@@ -112,6 +121,9 @@ function Article(props: Props) {
 						{generateApproxReadingTime()}
 					</h3>
 
+					<p id={styles.publication_date}>
+						Published on {formatPublicationDate(publicationDate)}
+					</p>
 					<div id={styles.infoBar}>
 						<div>
 							<h3 id={styles.authors}>

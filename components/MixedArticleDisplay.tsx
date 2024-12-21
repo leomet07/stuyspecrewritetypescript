@@ -10,6 +10,7 @@ import groupByImageExists from "../utils/groupArticles";
 import generate_contributors_jsx from "./GenerateContributorsJSX";
 import { useCallback, useEffect, useState, Fragment } from "react";
 import MixedAdvertisment from "../advertisements/MixedAdvertisement";
+import { format } from "date-fns";
 
 function CenterArticle(props: {
 	article: ReceivedArticle;
@@ -72,6 +73,9 @@ function CenterArticle(props: {
 				</p>
 			</Link>
 
+				<p className={styles.publication_date}>
+					Published on {article.publicationDate ? format(new Date(article.publicationDate), 'MMMM dd, yyyy') : 'Date not available'}
+				</p>
 			<p className={styles.article_volume_issue}>
 				<Link href={`/volume/${article.volume}/issue/${article.issue}`}>
 					Issue {article.issue}, Volume {article.volume}

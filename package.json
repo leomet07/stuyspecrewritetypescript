@@ -9,8 +9,9 @@
 	},
 	"dependencies": {
 		"@typescript-eslint/eslint-plugin": "^6.7.5",
+		"date-fns": "^4.1.0",
 		"mongodb": "^6.1.0",
-		"next": "^13.5.4",
+		"next": "^15.0.2",
 		"next-themes": "^0.2.1",
 		"node-fetch": "^3.3.2",
 		"react": "18.2.0",

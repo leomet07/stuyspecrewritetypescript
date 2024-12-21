@@ -17,6 +17,7 @@ export interface ReceivedArticle {
 	cover_image_source: string;
 	sub_section: string | undefined;
 	rank: number | undefined;
+	publicationDate: string;
 }
 
 export interface ReceivedStaff {
