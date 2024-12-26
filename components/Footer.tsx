@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from "../styles/Footer.module.css";
 import Link from "next/link";
-import LatestPreviewImage from "./LatestPreviewImage";
 
 import {
 	BsSpotify,
@@ -289,18 +288,7 @@ const Footer = () => {
 							</h3>
 						</div>
 					</div>
-					<div id={styles.column}>
-						<LatestPreviewImage
-							imageClass={styles.archiveImage1}
-							imageIndex={0}
-						/>
-					</div>
-					<div id={styles.column}>
-						<LatestPreviewImage
-							imageClass={styles.archiveImage2}
-							imageIndex={1}
-						/>
-					</div>
+				
 				</div>
 				<div id={styles.declarations}>
 					<p id={styles.left}>

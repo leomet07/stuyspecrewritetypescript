@@ -2,7 +2,6 @@ import styles from "../styles/Sidebar.module.css";
 import subscribe_button_styles from "../styles/SubscribeButton.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import LatestPreviewImage from "./LatestPreviewImage";
 import ThemeToggle from "./ThemeToggle";
 import {
   BsSpotify,
@@ -230,12 +229,6 @@ const Sidebar = (props: { showSidebar: boolean; setShowSidebar: (v: boolean) => 
           </div>
         </div>
         <div id={styles.socialsBar}>
-          <div id={styles.column}>
-            <LatestPreviewImage
-              imageIndex={0}
-              imageClass={styles.archiveImage1}
-            />
-          </div>
 
           <div id={styles.mediaButtons}>
             <Link href="https://open.spotify.com/show/1D0i5KdRFdMNNUwsKVfpYb">

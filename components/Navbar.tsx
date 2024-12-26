@@ -32,7 +32,7 @@ const Navbar = () => {
 				>
 					<Link passHref href="/">
 						<div>
-							<span id={styles.logo_the}>The </span>Spectator
+							<span id={styles.logo_the}>The</span>Spectator
 						</div>
 					</Link>
 				</span>
