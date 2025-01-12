@@ -105,11 +105,14 @@ const Footer = () => {
 									Opinions
 								</Link>
 							</h3>
+							{/* Subsection doesn't exist */}
+							{/*}
 							<p id={styles.subdepartment}>
 								<Link href="/department/opinions/blacklivesmatter">
 									#BlackLivesMatter
 								</Link>
 							</p>
+							*/}
 							<p id={styles.subdepartment}>
 								<Link href="/department/opinions/staff-editorials">
 									Staff Editorials
@@ -127,16 +130,22 @@ const Footer = () => {
 							<h3 id={styles.department}>
 								<Link href="/department/science">Science</Link>
 							</h3>
+							{/* Subsection doesn't exist /*}
+							{/*
 							<p id={styles.subdepartment}>
 								<Link href="/department/science/at-stuy">
 									Science at Stuy
 								</Link>
 							</p>
+							*/}
+							{/* Subsection doesn't exist /*}
+							{/*
 							<p id={styles.subdepartment}>
 								<Link href="/department/science/coronavirus-pandemic">
 									Coronavirus Pandemic
 								</Link>
 							</p>
+							*/}
 						</div>
 						<div id={styles.cell}>
 							<h3 id={styles.department}>
@@ -242,16 +251,22 @@ const Footer = () => {
 									College Issue
 								</Link>
 							</p>
+							{/* Subsection doesn't exist /*}
+							{/*
 							<p id={styles.subdepartment}>
 								<Link href="/department/spec-plus/quaranzine">
 									Quaranzine
 								</Link>
 							</p>
+							*/}
+							{/* Subsection doesn't exist /*}
+							{/*
 							<p id={styles.subdepartment}>
 								<Link href="/department/spec-plus/undercurrents">
 									Undercurrents
 								</Link>
 							</p>
+							*/}
 						</div>
 						<div id={styles.cell}>
 							<h3 id={styles.department}>
